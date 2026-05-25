@@ -1,19 +1,21 @@
-
 backend:
   name: github
   repo: jerryliampgd-create/chinese-
   branch: main
 
-media_folder: "images"
-public_folder: "/images"
-
 collections:
   - name: "questions"
     label: "Questions"
-    file: "questions.json"
-    fields:
-      - {label: "Questions", name: "questions", widget: "list", fields: [
-          {label: "Type", name: "type", widget: "select", options: ["L", "R"]},
-          {label: "Prompt", name: "prompt", widget: "text"},
-          {label: "Explanation", name: "explanation", widget: "text"}
-        ]}
+    files:
+      - file: "questions.json"
+        label: "Questions"
+        name: "questions"
+        fields:
+          - label: "Questions"
+            name: "questions"
+            widget: "list"
+            fields:
+              - {label: "Type", name: "type", widget: "select", options: ["L", "R"]}
+              - {label: "Prompt", name: "prompt", widget: "text"}
+              - {label: "Explanation", name: "explanation", widget: "text"}
+
