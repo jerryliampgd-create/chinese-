@@ -1,7 +1,11 @@
+
 backend:
   name: github
   repo: jerryliampgd-create/chinese-
   branch: main
+
+media_folder: "images"
+public_folder: "images"
 
 collections:
   - name: "questions"
@@ -18,4 +22,3 @@ collections:
               - {label: "Type", name: "type", widget: "select", options: ["L", "R"]}
               - {label: "Prompt", name: "prompt", widget: "text"}
               - {label: "Explanation", name: "explanation", widget: "text"}
-
